@@ -33,7 +33,7 @@ deactivate
 ### 启动
 
 - 方式一
-- 
+  
 ```cmd
 cd ..
 ./run.sh
