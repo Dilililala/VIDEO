@@ -1,5 +1,6 @@
 # 视频字幕AI自动识别显示工具
-本项目是参考[openkylin-video]（https://github.com/UbuntuKylin/kylin-video），在其基础上进行视频字幕功能实现
+
+本项目是参考['openkylin-video']（https://github.com/UbuntuKylin/kylin-video），在其基础上进行视频字幕功能实现
 
 ### 下载openkylin操作系统
 ============
