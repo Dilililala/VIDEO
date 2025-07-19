@@ -25,13 +25,12 @@ git clone https://gitlink.org.cn/xU6YmmUDv2/spzmazdsbxsgj.git
 - 安装虚拟python环境和依赖库
   
 ```cmd
-cd kylin-video
-cd subtitle_generator_py
-sudo apt update
-python3 -m venv myenv
-source myenv/bin/activate
-pip install loguru torch translate faster-whisper numpy ffmpeg-python -i https://pypi.tuna.tsinghua.edu.cn/simple
-deactivate
+cd kylin-video/subtitle_generator_py  //进入pytho文件目录下
+sudo apt update  //更新系统软件包
+python3 -m venv myenv  //创建python虚拟环境
+source myenv/bin/activate  //激活虚拟环境
+pip install loguru torch translate faster-whisper numpy ffmpeg-python -i https://pypi.tuna.tsinghua.edu.cn/simple  //安装相关依赖库
+deactivate  //退出虚拟环境
 ```
 
 ### 启动
@@ -39,13 +38,13 @@ deactivate
 - 方式一
   
 ```cmd
-cd ..
-./run.sh
+cd ..  //回到kylin-video目录下
+./run.sh  //运行
 ```
 如果显示权限不够，则执行
 
 ```cmd
-chmod +x run.sh src/kylin-video
+chmod +x run.sh src/kylin-video  
 ```
 - 方式二
   
@@ -59,7 +58,7 @@ chmod +x run.sh src/kylin-video
 
 本项目是在[openkylin-video](https://github.com/openkylin/kylin-video) 上进行视频字幕功能实现，由于openkylin系统自带kylin-video播放器，为避免系统默认播放器自动接管视频播放，需在完成上述程序启动操作后，通过拖放视频文件至应用窗口执行播放。
 
-该播放器不支持循环播放、自动播放下一个视频，每次播放完视频，需手动点击下一个要播放的视频。
+该播放器不支持循环播放、自动播放下一个视频，每次播放完视频后，需手动点击下一个要播放的视频。
 
 ### 功能介绍
 本项目在开源代码[openkylin-video](https://github.com/openkylin/kylin-video) 的基础上，新增了字幕语言切换、字幕颜色自定义、字幕位置设置功能。
